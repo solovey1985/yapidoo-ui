@@ -1,0 +1,33 @@
+{
+  "name": "yapidoo-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pl:build": "patternlab build --config ./patternlab-config.json",
+    "pl:help": "patternlab --help",
+    "pl:install": "patternlab install --config ./patternlab-config.json",
+    "pl:serve": "patternlab serve --config ./patternlab-config.json",
+    "pl:version": "patternlab --version",
+    "start": "npm run pl:serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solovey1985/yapidoo-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solovey1985/yapidoo-ui/issues"
+  },
+  "homepage": "https://github.com/solovey1985/yapidoo-ui#readme",
+  "dependencies": {
+    "@pattern-lab/cli": "^5.15.2",
+    "@pattern-lab/core": "^5.15.2",
+    "@pattern-lab/engine-handlebars": "^5.15.1",
+    "@pattern-lab/starterkit-handlebars-vanilla": "^1.4.2",
+    "@pattern-lab/uikit-workshop": "^5.15.3"
+  }
+}
