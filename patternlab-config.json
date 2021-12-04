@@ -1,5 +1,5 @@
 {
-  "cacheBust": true,
+  "cacheBust": false,
   "cleanPublic": true,
   "defaultPattern": "all",
   "defaultShowPatternInfo": false,

@@ -1,0 +1,56 @@
+{
+  "items": [
+    {
+      "name": "$font-size-sm",
+      "value": "13px",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "comment": "Jost 13 Regular"
+    },
+    {
+      "name": "$font-size-sm-2",
+      "value": "13px",
+      "font-weight": "500",
+      "font-style": "normal",
+      "comment": "Jost 13 Medium"
+    },
+    {
+      "name": "$font-size-med",
+      "value": "13px",
+      "font-weight": "600",
+      "font-style": "normal",
+      "comment": "Jost 13 Semibold_Uppercaser"
+    },
+    {
+      "name": "$font-size-med-2",
+      "value": "15px",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "comment": "Jost 15 Regular"
+    },
+    {
+      "name": "$font-size-large",
+      "value": "16px",
+      "font-weight": "bold",
+      "font-style": "normal",
+      "comment": "Jost 16 Bold"
+    },
+    {
+      "name": "$font-size-xl",
+      "value": "22px",
+      "font-weight": "bold",
+      "font-style": "normal",
+      "comment": "Jost 22 Bold"
+    },
+    {
+      "name": "$font-size-xxl",
+      "value": "28px",
+      "font-weight": "500",
+      "font-style": "normal",
+      "comment": "Jost 28 Medium"
+    }
+  ],
+  "meta": {
+    "description": "To add to these items, use Sass variables that start with <code>$font-size-</code> in <code>./source/css/scss/abstracts/_variables.scss</code>"
+  }
+}

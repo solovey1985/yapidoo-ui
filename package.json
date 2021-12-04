@@ -10,7 +10,9 @@
     "pl:install": "patternlab install --config ./patternlab-config.json",
     "pl:serve": "patternlab serve --config ./patternlab-config.json",
     "pl:version": "patternlab --version",
-    "start": "npm run pl:serve"
+    "start": "npm run scss:compile && npm run pl:serve && npm run scss:watch",
+    "scss:compile": "node-sass --recursive source/css/scss/style.scss --output source/css --include-path /source/css/scss --precision 6 --output-style expanded",
+    "scss:watch": "node-sass --watch --recursive source/css/scss/style.scss --output source/css --include-path /source/css/scss --precision 6 --output-style expanded"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,7 @@
     "@pattern-lab/core": "^5.15.2",
     "@pattern-lab/engine-handlebars": "^5.15.1",
     "@pattern-lab/starterkit-handlebars-vanilla": "^1.4.2",
-    "@pattern-lab/uikit-workshop": "^5.15.3"
+    "@pattern-lab/uikit-workshop": "^5.15.3",
+    "onchange": "^7.1.0"
   }
 }

@@ -1,0 +1,13 @@
+.y-button {
+    background-color: $brand-primary;
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+    width: 100%;
+    &:hover{
+        background-color: $brand-secondary;
+    }
+    &:active{
+        background-color: wheat;
+    }
+}
