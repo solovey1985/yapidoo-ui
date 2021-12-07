@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+  <head>
+    <title>Title ipsum dolor sit (39 characters)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="../../css/style.css?0" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?0" media="all" />
+<script src="https://kit.fontawesome.com/a06ca6da20.js" crossorigin="anonymous"></script>
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="">
+<ul class="sg-colors">
+        <span class="sg-swatch" style="background: #FF8219"></span>
+        <span class="sg-label">
+            $brand-primary
+            <br> #FF8219 <br>
+        </span>        <span class="sg-swatch" style="background: #FFE81E"></span>
+        <span class="sg-label">
+            $brand-secondary
+            <br> #FFE81E <br>
+        </span>        <span class="sg-swatch" style="background: #F5F6F8"></span>
+        <span class="sg-label">
+            $background-grey
+            <br> #F5F6F8 <br>
+        </span>        <span class="sg-swatch" style="background: #EBEBEB"></span>
+        <span class="sg-label">
+            $dark-grey-10
+            <br> #EBEBEB <br>
+        </span>        <span class="sg-swatch" style="background: #D6D6D6"></span>
+        <span class="sg-label">
+            $dark-grey-20
+            <br> #D6D6D6 <br>
+        </span>        <span class="sg-swatch" style="background: #ADADAD"></span>
+        <span class="sg-label">
+            $dark-grey-40
+            <br> #ADADAD <br>
+        </span>        <span class="sg-swatch" style="background: #707070"></span>
+        <span class="sg-label">
+            $dark-grey-70
+            <br> #707070 <br>
+        </span>        <span class="sg-swatch" style="background: #C0F6FD"></span>
+        <span class="sg-label">
+            $background-blue
+            <br> #C0F6FD <br>
+        </span>        <span class="sg-swatch" style="background: #D81B1B"></span>
+        <span class="sg-label">
+            $base-red
+            <br> #D81B1B <br>
+        </span>        <span class="sg-swatch" style="background: #000000"></span>
+        <span class="sg-label">
+            $base-black
+            <br> #000000 <br>
+        </span>        <span class="sg-swatch" style="background: #333333"></span>
+        <span class="sg-label">
+            $base-dark-grey
+            <br> #333333 <br>
+        </span>        <span class="sg-swatch" style="background: #FFFFFF"></span>
+        <span class="sg-label">
+            $base-white
+            <br> #FFFFFF <br>
+        </span>        <span class="sg-swatch" style="background: #656565"></span>
+        <span class="sg-label">
+            $background-color
+            <br> #656565 <br>
+        </span></ul>
+<!--DO NOT REMOVE-->
+<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-color","lineagePath":"../../patterns/atoms-global-color\\atoms-global-color.rendered.html"}],"lineage":[{"lineagePattern":"atoms-color","lineagePath":"../../patterns/atoms-global-color\\atoms-global-color.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"atoms","patternSubgroup":"global"},"patternExtension":"hbs","patternName":"Colors","patternPartial":"atoms-colors","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-color","lineagePath":"../../patterns/atoms-global-color\\atoms-global-color.rendered.html"}],"lineage":[{"lineagePattern":"atoms-color","lineagePath":"../../patterns/atoms-global-color\\atoms-global-color.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"atoms","patternSubgroup":"global"},"patternExtension":"hbs","patternName":"Colors","patternPartial":"atoms-colors","patternState":"","patternEngineName":"handlebars","extraOutput":{}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-0">
+  (function() {
+    if (self != top) {
+      var cb = '0';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-0" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+</body>
+</html>

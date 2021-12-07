@@ -1,0 +1,193 @@
+/*------------------------------------*\
+    #TABLE OF CONTENTS
+\*------------------------------------*/
+/**
+ * ABSTRACTS..............................Declarations of Sass variables & mixins
+ * BASE...................................Default element styles
+ * LAYOUT.................................Layout-specific styles
+ * COMPONENTS.............................Component styles
+ * UTILITIES..............................Utility classes
+ */
+/*------------------------------------*\
+    #ABSTRACTS
+\*------------------------------------*/
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../../fonts/roboto-black-webfont.woff2") format("woff2"), url("../../../fonts/roboto-black-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../../../fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../../fonts/roboto-light-webfont.woff2") format("woff2"), url("../../../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../../../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../../../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../../fonts/roboto-thin-webfont.woff2") format("woff2"), url("../../../fonts/roboto-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+p {
+  text-align: justify;
+}
+
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
+/*------------------------------------*\
+    #RESET
+\*------------------------------------*/
+/**
+ * Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+* {
+  box-sizing: border-box;
+}
+
+/**
+ * 1) Zero out margins and padding for elements
+ */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+/**
+ * 1) Set HTML5 elements to display: block
+ */
+header, footer, nav, section, article, figure {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.y-button {
+  background-color: #FF8219;
+  border-radius: 10px;
+  height: 50px;
+  border: none;
+  width: 100%;
+}
+
+.y-button:hover {
+  background-color: #FFE81E;
+}
+
+.y-button:active {
+  background-color: wheat;
+}
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+.page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.page-onboarding {
+  background-color: #C0F6FD;
+}
+
+.section {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0 10%;
+  margin: 0 0 72px 0;
+}
+
+.section h2 {
+  margin-bottom: 24px;
+}
+
+.image-section {
+  background-color: #FFFFFF;
+  border-radius: 0 0 50% 50%;
+  flex-grow: 2;
+  padding: 118px 0 40px 0;
+  margin-bottom: 30%;
+}
+
+.image-section img {
+  border-radius: 36px;
+  width: 72%;
+}
+
+.onboarding-pagination {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.bullet-pagination {
+  display: flex;
+  margin: 36px auto;
+}
+
+.point {
+  margin: 0 4px;
+  color: #ADADAD;
+}
+
+.point.active {
+  color: #FF8219;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button-text {
+  background: none;
+  color: #000000;
+  border: 1px solid transparent;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/*------------------------------------*\
+    #PAGES
+\*------------------------------------*/
+/*------------------------------------*\
+/*------------------------------------*\
+    #UTILITIES
+\*------------------------------------*/
+/*------------------------------------*\
+    #COMPONENTS
+\*------------------------------------*/

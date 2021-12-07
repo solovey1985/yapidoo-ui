@@ -1,0 +1,10 @@
+<ul>
+    {{# items }}
+    <li style="font-size: {{ value }}; font-style: {{font-style}}; font-weight:{{font-weight}}">
+        {{ name }}: {{ value }}
+        {{#if comment}}
+            ({{comment}}) 
+        {{/ if}} </li>
+    {{/ items }}
+</ul>
+<small>{{{ meta.description }}}</small>
