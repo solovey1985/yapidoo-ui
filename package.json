@@ -26,11 +26,13 @@
   },
   "homepage": "https://github.com/solovey1985/yapidoo-ui#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@pattern-lab/cli": "^5.15.2",
     "@pattern-lab/core": "^5.15.2",
     "@pattern-lab/engine-handlebars": "^5.15.1",
     "@pattern-lab/starterkit-handlebars-vanilla": "^1.4.2",
     "@pattern-lab/uikit-workshop": "^5.15.3",
+    "bootstrap": "^5.1.3",
     "onchange": "^7.1.0"
   }
 }
