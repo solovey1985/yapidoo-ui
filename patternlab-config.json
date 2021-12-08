@@ -97,6 +97,9 @@
     "density": "compact",
     "layout": "vertical"
   },
+  "transformedAssetTypes": [
+    "scss"
+  ],
   "uikits": [
     {
       "name": "uikit-workshop",

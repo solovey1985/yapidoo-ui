@@ -1,0 +1,22 @@
+select,
+option,
+input,
+textarea {
+  background-color: $background-grey;
+  border-radius: $base-border-radius;
+  height: 40px;
+  border: 1px solid $dark-grey-10;
+  &:hover {
+    border: 1px solid rgba(255, 130, 25, 0.6);
+    stroke-opacity: 0.6;
+  }
+  &:focus {
+    border: 1px solid rgba(255, 130, 25, 1);
+  }
+}
+
+input[type="checkbox"] {
+  font-size: 20px;
+  line-height: 16px;
+  color: $base-dark-grey;
+}

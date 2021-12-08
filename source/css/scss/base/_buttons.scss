@@ -1,13 +1,29 @@
 .y-button {
-    background-color: $brand-primary;
-    border-radius: 10px;
-    height: 50px;
-    border: none;
-    width: 100%;
-    &:hover{
-        background-color: $brand-secondary;
+  background-color: $brand-primary;
+  border-radius: $button-border-radius;
+  height: 40px;
+  border: none;
+  width: 175px;
+  &:hover {
+    background-color: $brand-secondary;
+  }
+  &:active {
+    background-color: $brand-secondary;
+  }
+
+  &.y-button-icon {
+    font-size: 1rem;
+    color: $base-white;
+    height: 30px;
+    width: 30px;
+    line-height: 0;
+    border-radius: 50%;
+    background-color: $base-dark-grey;
+    &.facebook {
+      width: 50px;
+      height: 50px;
+      background-color: $facebook-color;
+      font-size: 2rem;
     }
-    &:active{
-        background-color: wheat;
-    }
+  }
 }

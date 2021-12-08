@@ -96,10 +96,10 @@ ul {
 
 .y-button {
   background-color: #FF8219;
-  border-radius: 10px;
-  height: 50px;
+  border-radius: 20px;
+  height: 40px;
   border: none;
-  width: 100%;
+  width: 175px;
 }
 
 .y-button:hover {
@@ -107,7 +107,58 @@ ul {
 }
 
 .y-button:active {
-  background-color: wheat;
+  background-color: #FFE81E;
+}
+
+.y-button.y-button-icon {
+  font-size: 1rem;
+  color: #FFFFFF;
+  height: 30px;
+  width: 30px;
+  line-height: 0;
+  border-radius: 50%;
+  background-color: #333333;
+}
+
+.y-button.y-button-icon.facebook {
+  width: 50px;
+  height: 50px;
+  background-color: #0375e8;
+  font-size: 2rem;
+}
+
+/*------------------------------------*\
+    #ELEMENTS
+\*------------------------------------*/
+select,
+option,
+input,
+textarea {
+  background-color: #F5F6F8;
+  border-radius: 8px;
+  height: 40px;
+  border: 1px solid #EBEBEB;
+}
+
+select:hover,
+option:hover,
+input:hover,
+textarea:hover {
+  border: 1px solid rgba(255, 130, 25, 0.6);
+  stroke-opacity: 0.6;
+}
+
+select:focus,
+option:focus,
+input:focus,
+textarea:focus {
+  border: 1px solid #ff8219;
+}
+
+input[type="checkbox"] {
+  font-size: 20px;
+  line-height: 16px;
+  color: #333333;
 }
 
 /*------------------------------------*\
