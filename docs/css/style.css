@@ -99,7 +99,7 @@ ul {
   border-radius: 20px;
   height: 40px;
   border: none;
-  width: 175px;
+  width: 100%;
 }
 
 .y-button:hover {
@@ -127,12 +127,21 @@ ul {
   font-size: 2rem;
 }
 
+.y-button.y-button-md {
+  width: 124px;
+  height: 40px;
+}
+
+.y-button.y-button-sm {
+  width: 98px;
+  height: 28px;
+}
+
 /*------------------------------------*\
     #ELEMENTS
 \*------------------------------------*/
 select,
-option,
-input,
+input[type="text"],
 textarea {
   background-color: #F5F6F8;
   border-radius: 8px;
@@ -141,16 +150,14 @@ textarea {
 }
 
 select:hover,
-option:hover,
-input:hover,
+input[type="text"]:hover,
 textarea:hover {
   border: 1px solid rgba(255, 130, 25, 0.6);
   stroke-opacity: 0.6;
 }
 
 select:focus,
-option:focus,
-input:focus,
+input[type="text"]:focus,
 textarea:focus {
   border: 1px solid #ff8219;
 }
@@ -159,6 +166,143 @@ input[type="checkbox"] {
   font-size: 20px;
   line-height: 16px;
   color: #333333;
+}
+
+/* Customize the label (the y-container) */
+.y-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.y-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.y-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #FFFFFF;
+  border: 2px solid #333333;
+  border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.y-container:hover input ~ .y-checkbox {
+  background-color: #ADADAD;
+}
+
+/* When the checkbox is checked, add a blue background */
+.y-container input:checked ~ .y-checkbox {
+  background-color: #FFFFFF;
+}
+
+.y-container input:checked ~ .y-checkbox:hover {
+  background-color: #ADADAD;
+}
+
+/* Create the y-checkbox/indicator (hidden when not checked) */
+.y-checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the y-checkbox when checked */
+.y-container input:checked ~ .y-checkbox:after {
+  display: block;
+  top: 0;
+  left: 4px;
+}
+
+/* Style the y-checkbox/indicator */
+.y-container .y-checkbox:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: 1px solid #333333;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* The container must be positioned relative: */
+.y-select {
+  position: relative;
+  font-family: Arial;
+  color: #000000;
+}
+
+.y-select select {
+  display: none;
+  /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #FF8219;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #FF8219 transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div, .select-selected {
+  color: #000000;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #FF8219;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /*------------------------------------*\

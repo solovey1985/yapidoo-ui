@@ -3,7 +3,7 @@
   border-radius: $button-border-radius;
   height: 40px;
   border: none;
-  width: 175px;
+  width: 100%;
   &:hover {
     background-color: $brand-secondary;
   }
@@ -25,5 +25,13 @@
       background-color: $facebook-color;
       font-size: 2rem;
     }
+  }
+  &.y-button-md{
+    width: 124px;
+    height: 40px;
+  }
+  &.y-button-sm{
+    width: 98px;
+    height: 28px;
   }
 }

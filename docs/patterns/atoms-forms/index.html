@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="../../css/style.css?0" media="all" />
     <link rel="stylesheet" href="../../css/pattern-scaffolding.css?0" media="all" />
-<script src="https://kit.fontawesome.com/a06ca6da20.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a06ca6da20.js" crossorigin="anonymous"></script>
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?0" media="all">
     <!-- End Pattern Lab -->
@@ -157,12 +157,23 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<select class="" id="" placeholder="Placeholder"  >
-    <option value="option-1">Option 1</option>
-    <option value="option-2">Option 2</option>
-
-
-</select>
+			<div class="y-select" style="width:200px;">
+  <select>
+    <option value="0">Select car:</option>
+    <option value="1">Audi</option>
+    <option value="2">BMW</option>
+    <option value="3">Citroen</option>
+    <option value="4">Ford</option>
+    <option value="5">Honda</option>
+    <option value="6">Jaguar</option>
+    <option value="7">Land Rover</option>
+    <option value="8">Mercedes</option>
+    <option value="9">Mini</option>
+    <option value="10">Nissan</option>
+    <option value="11">Toyota</option>
+    <option value="12">Volvo</option>
+  </select>
+</div>
 
 			</div><!--end pl-js-pattern-example-->
 		
@@ -207,7 +218,10 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<input name="checkbox" type="checkbox" checked="checked" />
+			<label class="y-container"><span>Y Checkbox</span>
+  <input type="checkbox"/>
+  <span class="y-checkbox"></span>
+</label>
 
 			</div><!--end pl-js-pattern-example-->
 		
@@ -331,6 +345,6 @@
   loadJS('../../styleguide/js/patternlab-pattern.js');
 </script>
 
-
+<script src="../../js/select.js"></script>
 </body>
 </html>

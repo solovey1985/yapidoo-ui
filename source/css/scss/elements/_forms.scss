@@ -1,6 +1,5 @@
 select,
-option,
-input,
+input[type="text"],
 textarea {
   background-color: $background-grey;
   border-radius: $base-border-radius;
