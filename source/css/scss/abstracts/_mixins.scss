@@ -1,3 +1,11 @@
 @mixin primary-gradient {
     background: linear-gradient(231.63deg, $brand-primary 31.4%, $brand-secondary 122.19%);
 }
+
+@mixin shadow-element{
+    box-shadow: 0px 1.56098px 7.80488px rgba(0, 0, 0, 0.2);
+}
+@mixin text-ellipses{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,2 +1,21 @@
 $base-border-radius:8px;
 $button-border-radius: 20px;
+$font-family: "Jost";
+//Font Sizes
+$font-size-sm: 13px;
+$font-size-sm-2: 13px;
+$font-size-med: 13px;
+$font-size-med-2: 15px;
+$font-size-large: 16px;
+$font-size-xl: 22px;
+$font-size-xxl: 28px;
+
+//Font Styles;
+$font-sm-regular: $font-size-sm $font-family, sans-serif;
+$font-sm-medium: $font-size-sm $font-family, sans-serif;
+$font-sm-semibold-uppercase: small-caps bold $font-size-sm $font-family, sans-serif;
+$font-md-regular: $font-size-med-2 $font-family, sans-serif;
+$font-lg-bold: $font-size-large bold $font-family, sans-serif;
+$font-xl-bold: $font-size-sm bold $font-family, sans-serif;
+$font-xxl-medium: $font-size-xxl medium $font-family, sans-serif;
+

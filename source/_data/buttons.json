@@ -1,9 +1,4 @@
 {
-	"buttonTag" : true,
-	"buttonText" : "Button",
-    "buttonGroup" : [
-        {},
-        {},
-        {}
-    ]
+	"message": "Yapidoo Button",
+    "style": "button-md"
 }

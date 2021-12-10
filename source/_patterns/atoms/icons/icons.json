@@ -1,0 +1,19 @@
+{
+    "icons": [
+        {
+            "icon": "user",
+            "style": "primary",
+            "size": "sm"
+        },
+        {
+            "icon": "map-pin",
+            "style": "default",
+            "size": "lg"
+        },
+        {
+            "icon": "map-marker",
+            "style": "secondary",
+            "size": "4x"
+        }
+    ]
+}

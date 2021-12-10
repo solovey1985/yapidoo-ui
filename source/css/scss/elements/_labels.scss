@@ -1,0 +1,26 @@
+.label {
+  font-size: $font-size-sm-2;
+  @include text-ellipses();
+  &_primary {
+    color: $brand-primary;
+  }
+
+  &__text {
+    margin-left: $margin-sm;
+    &_size {
+      &_m {
+        font-size: $font-size-med-2;
+      }
+      &_s {
+        font-size: $font-size-sm;
+      }
+    }
+    &_bold {
+      font: $font-sm-semibold-uppercase;
+    }
+  }
+  &.label-input {
+    font: $font-md-regular;
+    font-weight: 600;
+  }
+}

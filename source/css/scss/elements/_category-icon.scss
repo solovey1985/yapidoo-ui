@@ -1,0 +1,26 @@
+.category-icon {
+  display: flex;
+  flex-direction: column;
+  width: 76px;
+  height: 86px;
+  border-radius: 6px;
+  box-shadow: $brand-primary 1px;
+  align-content: center;
+  @include shadow-element();
+  .category-icon__icon {
+    height: 75%;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 28px;
+    color: $brand-primary;
+  }
+  .category-icon__text {
+    height: 25%;
+    font-size: 0.85rem;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    width: 90%;
+  }
+}

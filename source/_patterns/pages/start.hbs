@@ -1,12 +1,13 @@
 <div class="page page-onboarding">
 
     <div class="section">
-        {{>elements-logo-l}}
+        {{> elements-logo-l}}
     </div>
     <div class="section">
-        {{> atoms-button-white-md}}
-        {{> atoms-button-bare message="HHHH"}}
-
+        <div class="button-group">
+            {{> atoms-button-white-md message="Увійти"}}
+            {{> atoms-button-bare message="Зареєструватися"}}
+        </div>
     </div>
     <div class="section">
         <img src="../../images/start.png" />

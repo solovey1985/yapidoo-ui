@@ -1,0 +1,11 @@
+i.fa{
+    &.primary{
+        color: $brand-primary;
+    }
+    &.default{
+        color: $base-dark-grey;
+    }
+    &.secondary{
+        color: $brand-secondary;
+    }
+}
