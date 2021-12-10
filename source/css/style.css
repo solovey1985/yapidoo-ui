@@ -110,6 +110,41 @@ ul {
   background-color: #FFE81E;
 }
 
+.y-button.y-button-white {
+  background-color: #F5F6F8;
+}
+
+.y-button.y-button-white:hover {
+  background-color: rgba(255, 130, 25, 0.2);
+}
+
+.y-button.y-button-white:active {
+  background-color: rgba(255, 130, 25, 0.4);
+}
+
+.y-button.y-button-text {
+  background: none;
+}
+
+.y-button.y-button-text:hover {
+  background-color: rgba(255, 130, 25, 0.2);
+}
+
+.y-button.y-button-text:active {
+  background-color: rgba(255, 130, 25, 0.4);
+}
+
+.y-button.y-button-md {
+  text-transform: uppercase;
+  width: 124px;
+  height: 40px;
+}
+
+.y-button.y-button-sm {
+  width: 98px;
+  height: 28px;
+}
+
 .y-button.y-button-icon {
   font-size: 1rem;
   color: #FFFFFF;
@@ -125,16 +160,6 @@ ul {
   height: 50px;
   background-color: #0375e8;
   font-size: 2rem;
-}
-
-.y-button.y-button-md {
-  width: 124px;
-  height: 40px;
-}
-
-.y-button.y-button-sm {
-  width: 98px;
-  height: 28px;
 }
 
 /*------------------------------------*\
@@ -277,6 +302,10 @@ input[type="checkbox"] {
   top: 7px;
 }
 
+.select-arrow-active:first() {
+  border: 1px solid #FF8219;
+}
+
 /* style the items (options), including the selected item: */
 .select-items div,
 .select-selected {
@@ -290,7 +319,7 @@ input[type="checkbox"] {
 .select-items {
   position: absolute;
   background-color: #F5F6F8;
-  top: 100%;
+  top: 110%;
   left: 0;
   right: 0;
   z-index: 99;

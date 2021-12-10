@@ -26,9 +26,14 @@
 }
 
 /* Point the arrow upwards when the select box is open (active): */
+
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent $brand-primary transparent;
   top: 7px;
+  
+}
+.select-arrow-active:first() {
+  border: 1px solid $brand-primary;
 }
 
 /* style the items (options), including the selected item: */
@@ -44,7 +49,7 @@
 .select-items {
   position: absolute;
   background-color: $background-grey;
-  top: 100%;
+  top: 110%;
   left: 0;
   right: 0;
   z-index: 99;

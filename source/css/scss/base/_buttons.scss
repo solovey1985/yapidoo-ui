@@ -4,13 +4,51 @@
   height: 40px;
   border: none;
   width: 100%;
+
   &:hover {
     background-color: $brand-secondary;
   }
+
   &:active {
     background-color: $brand-secondary;
   }
 
+  //White
+  &.y-button-white {
+    background-color: $background-grey;
+    &:hover {
+      background-color: rgba(255, 130, 25, 0.2);
+    }
+    &:active {
+      background-color: rgba(255, 130, 25, 0.4);
+    }
+  }
+
+  //Bare
+  &.y-button-text {
+    background: none;
+    &:hover {
+      background-color: rgba(255, 130, 25, 0.2);
+    }
+
+    &:active {
+      background-color: rgba(255, 130, 25, 0.4);
+    }
+  }
+
+  //Size
+  &.y-button-md {
+    text-transform: uppercase;
+    width: 124px;
+    height: 40px;
+  }
+
+  &.y-button-sm {
+    width: 98px;
+    height: 28px;
+  }
+
+  //Icon
   &.y-button-icon {
     font-size: 1rem;
     color: $base-white;
@@ -25,13 +63,5 @@
       background-color: $facebook-color;
       font-size: 2rem;
     }
-  }
-  &.y-button-md{
-    width: 124px;
-    height: 40px;
-  }
-  &.y-button-sm{
-    width: 98px;
-    height: 28px;
   }
 }
